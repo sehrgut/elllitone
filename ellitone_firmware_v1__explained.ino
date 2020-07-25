@@ -110,7 +110,7 @@ byte gain1,gain2,gain3,gain4,gain5,gain6,gain7,gain8=1;
 
 byte envGain1,envGain2,envGain3,envGain4,envGain5,envGain6,envGain7,envGain8=255;     //just initializing more stuff for later on    
 
-byte key=1;       
+byte key=1;       //the most current key button that was last pressed (1-4)
 byte mode=1;
 
   int p1=100;      //4 pitches
@@ -118,7 +118,7 @@ byte mode=1;
   int p3=100;
   int p4=100;
 
-  int pitchAlter=0; 
+  int pitchAlter=0;   //used for sequence transposing
 
   EventDelay seqTimer;
   byte seqPos=1;
@@ -132,7 +132,7 @@ byte mode=1;
         EventDelay newRandrh;        
         EventDelay newRandvoicing;
 
-        int step1rh=200;             
+        int step1rh=200;            //seriously, dont worry about all these weird variables till later.
         int step2rh=200;
         int step3rh=200;
         int step4rh=200;
@@ -140,7 +140,7 @@ byte mode=1;
 
         byte stepNum=1;
 
-        int attack=100;
+        int attack=100;   //envelope stuff
         int decay=100;
 
          int fmLevel;
@@ -180,7 +180,7 @@ byte modGain=255;
   byte rhtime3=1;
   byte rhtime4=1;
 
-  byte voicing1=1;    
+  byte voicing1=1;      //these are the chord divisions for the voicing control
   byte voicing2=1;
   byte voicing3=1;
   byte voicing4=1;

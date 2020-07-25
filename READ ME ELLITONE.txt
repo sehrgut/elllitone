@@ -1,10 +1,10 @@
-ELLITONE MULTI-SYNTH is powered using the Mozzi Sonification Library for Arduino. 
+  ELLITONE MULTI-SYNTH is powered using the Mozzi Sonification Library for Arduino. 
 
-I have spent the last 2.5 years exploring this library, finding the atmega328s strong and weak points when processing realtime audio 
+ I have spent the last 2.5 years exploring this library, finding the atmega328s strong and weak points when processing realtime audio 
 
-In the following program, I attempted to squeeze as much Mozzi functionality into a single device, paired with a simple "patch and play" interface. 
+ In the following program, I attempted to squeeze as much Mozzi functionality into a single device, paired with a simple "patch and play" interface. 
 
-Currently, this program uses 99.99% of the atmega328 program storage space. This includes the 6 WaveTable files that represent the WaveForm Shapes  <tables/AKWF_.....h>
+ Currently, this program uses 99.99% of the atmega328 program storage space. This includes the 6 WaveTable files that represent the WaveForm Shapes  <tables/AKWF_.....h>
 
 You might be asking "can I use my own waveforms?". Creating custom waveforms for use in mozzi is not a simple or straightforward process. Still, you can look more into this process 
 by reading through the Mozzi Forum Google Group.
@@ -24,14 +24,14 @@ Do Not Simply put the unzipped "AKWF_Mozzified" folder into the "tables" folder.
 
 Next, in the #include section below, copy in the waveshape files you want to use instead of the 6 that are currently there.  
 
-Next, Around Code Line ~78 (current line code # is in bottom left hand corner of Arduino IDE window) make sure that one of your new wavetables is used here instead of old waveform! 
-Code Line ~231, make sure that one of your new wavetables is used here aswell! 
+Next, Around Code Line ~93 (current line code # is in bottom left hand corner of Arduino IDE window) make sure that one of your new wavetables is used here instead of old waveform! 
+Code Line ~246, make sure that one of your new wavetables is used here aswell! 
 
-Lastly, Code Line ~856 through ~932 is where the actual switching between waveforms happen when you connect different outputs to the WaveForm input. 
+Lastly, Code Line ~869 through ~946 is where the actual switching between waveforms happen when you connect different outputs to the WaveForm input. 
 This is where you will put in all your new selected waveform files! 
 
 If you wish to try adding new features and modes, one way to quickly free up a bunch of space (to work with) is to #include and use LESS than 6 WaveForms. 
 You can just use 1 waveform file in all the places listed above and free up ~40% more space for added logic functions!  
 
 I am more than happy to further explain the following code and its workings if people are interested in taking this device even further! 
-Feel free to email me at ellistronics.usa@gmail.com
+Feel free to email me at ellistronics.usa@gmail.com 
