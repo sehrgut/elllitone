@@ -27,10 +27,10 @@
 
 //Next, in the #include section below, copy in the waveshape files you want to use instead of the 6 that are currently there.  
 
-//Next, Around Code Line ~78 (current line code # is in bottom left hand corner of Arduino IDE window) make sure that one of your new wavetables is used here instead of old waveform! 
-//Code Line ~231, make sure that one of your new wavetables is used here aswell! 
+//Next, Around Code Line ~93 (current line code # is in bottom left hand corner of Arduino IDE window) make sure that one of your new wavetables is used here instead of old waveform! 
+//Code Line ~246, make sure that one of your new wavetables is used here aswell! 
 
-//Lastly, Code Line ~856 through ~932 is where the actual switching between waveforms happen when you connect different outputs to the WaveForm input. 
+//Lastly, Code Line ~869 through ~946 is where the actual switching between waveforms happen when you connect different outputs to the WaveForm input. 
 //This is where you will put in all your new selected waveform files! 
 
 //If you wish to try adding new features and modes, one way to quickly free up a bunch of space (to work with) is to #include and use LESS than 6 WaveForms. 
@@ -44,7 +44,7 @@
 #include <MozziGuts.h>        //loads all the essential mozzi engine stuff 
 #include <Oscil.h>           //loads behind the scenes oscillator magic
 #include <EventDelay.h>   //used throughout this program as "timers" in place of the usual arduino "delay" functions which are disabled by mozzi workings
-#include <Ead.h>              // stands for Exponential Attack Decay. This loads the behind the scenes envelope magic
+#include <Ead.h>              // stands for Exponential Attack Decay (Envelope). This loads the behind the scenes envelope magic
 #include <WavePacket.h>          //loads "chirp" type synthesis engine 
 #include <Smooth.h>          //loads basic smoothing filter (not for audio). used to smooth the jumpy analog data readings from the 4 knobs 
 
