@@ -20,7 +20,9 @@
 //Next, download and unzip the Mozzi file. Take the unzipped Mozzi folder and place it inside the "libraries" folder located within the Arduino Folder, (usually found in My Documents). 
 
 //Now, make sure you have successfully installed the CH340 Driver. This driver allows your computer to communicate with the Ellitones atmega328.
-//If installed correctly, your computer should recognize the Arduino when plugged into USB and it will show up as a COM in Tools-Port menu in Arduino IDE
+//If installed correctly, your computer should recognize the Arduino when plugged into USB and it will show up as a COM in Tools > Port menu in Arduino IDE
+
+//Next, under the Tools > Board option, choose NANO 
 
 //Now, Navigate to Documents > Arduino > libraries > Mozzi-1.0.3rc6 > tables
 //Scroll down until you start seeing the files that start with "AKWF" these are all the possible waveforms you can choose from!
