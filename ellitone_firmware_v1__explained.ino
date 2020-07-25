@@ -220,7 +220,7 @@ int waveyFreak=0;
 
 int riggy;
 
-#define CONTROL_RATE 64       //this entire mozzi engine program operates at a click rate determined here. this is how fast the programs loop() section will loop 
+#define CONTROL_RATE 64       //this entire mozzi engine program operates at a click rate determined here. this is how fast the programs updateControl() section will loop 
 
 
 
